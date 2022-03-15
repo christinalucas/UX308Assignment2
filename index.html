@@ -1,25 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <link rel="manifest" href="/magic.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <meta name="theme-color" content="white" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Magic 8 Ball">
-    <meta name="msapplication-TileImage" content="/img/ms144.png">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <!-- JQuery / Materialize CSS + JavaScript imports -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <style>
+        #container {
+            padding-left: 300px;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        @media only screen and (max-width : 992px) {
+            #container {
+                padding-left: 0px;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
-    <form id="magic8ball">
-        <h1>Magic 8 ball</h1>
-        <h2>the 8 ball knows</h2>
-        <p>Ask me anything I will answer.</p>
-        <input id="question" placeholder="enter a question" />
-        <button type="submit">Ask</button>
-        <p id="answer">If you had asked The answer would be here</p>
-    </form>
-    <script src="js/main.js" type="module"></script>
+    <div id="container">
+
+        <div id="menu">
+
+            <ul id="slide-out" class="side-nav fixed show-on-large-only">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">About Me<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#skills">Skills and Tools</a></li>
+                                    <li><a href="#hobbies">Hobbies</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i
+                    class="material-icons">menu</i></a>
+
+            <h1>Christina Lucas</h1>
+            <br/>
+
+<section id="profile">
+    <h2>Profile</h2>
+    <br/>
+    <h3>Contact Information</h3>
+    <h4>416-201-2812</h4>
+    <h4>christinagracelucas@gmail.com</h4>
+    <p>I am an aspiring user experience designer with an eye for detail, a user-centred mindset, and a desire to learn.</p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</section>
+ <section id="experience">
+    <h2>Work Experience</h2>
+    <br/>
+    <h3>User Experience Designer</h3>
+    <h4>Digital Consultants</h4>
+    <h5>2020 - Present</h5>
+    <ul>
+        <li>Increase engagement on social media platforms</li>
+        <li>Create and design materials for clients</li>
+        <li>Design and launch websites</li>
+        <li>Develop digital marketing strategies for clients</li>
+      </ul>
+    <br/>
+    <h3>Peer Academic Coach</h3>
+    <h4>Wilfrid Laurier University</h4>
+    <h5>2020 - 2021</h5>
+    <ul>
+        <li>Assist with remote and online delivery of the first-year Design Thinking course</li>
+        <li>Act as a peer mentor for new UX students</li>
+      </ul>
+    <br/>
+    <h3>Innovation Designer</h3>
+    <h4>Scotiabank</h4>
+    <h5>2019</h5>
+    <ul>
+        <li>Influence the design of experiences for Scotiabank customers</li>
+        <li>Produce visual designs to illustrate concepts</li>
+        <li>Conduct research and synthesize outcomes into viable customer experiences</li>
+      </ul>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <br/>
+    <h3>Wilfrid Laurier University</h3>
+    <h4>User Experience Design</h4>
+    <h5>2019-2022</h5>
+    <ul>
+        <li>Work with real-world design challenges and real clients</li>
+        <li>Gaining experience in designing for the web,immersive environments, processes, and services</li>
+      </ul>
+    <br/>
+    <h3>University of Waterloo</h3>
+    <h4>Biomedical Engineering</h4>
+    <h5>2017-2019</h5>
+    <ul>
+        <li>Studied biomechanics, physics, chemistry,and design</li>
+        <li>Learned to model and design various biomedical systems</li>
+      </ul>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</section>
+
+<section id="skills">
+    <h2>Skills and Tools</h2>
+    <br/>
+    <h4>Content Messaging | UI Design | Rapid Prototyping | User Research | Sketch | Adobe Suite | Figma | Interaction Design | HTML | CSS | JavaScript</h4>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</section>
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <br/>
+    <h4>Painting | Bagpiping | Tennis | Sewing | Reading</h4>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</section>
+
+
+        </div>
+
+    </div>
+    <script>
+        $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+        });
+
+
+    </script>
 </body>
+
+</html>
